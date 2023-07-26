@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>My_project</title>
+     <link rel="stylesheet" href="./tailwind.min.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+<body class="bg-gray-300">
+
+     <i class="bi bi-list text-blue-800 text-3xl absolute left-5 top-4" onclick="Open()"></i>
+     <div class="sidebar bg-blue-800 w-72 h-full -left-96 lg:left-0 fixed"> 
+          <div class="flex justify-between mt-4 ">
+               <i class="bi bi-amd text-white text-3xl ml-4"></i>
+               <h2 class="font-mono text-4xl text-white mr-14">Maandeeq</h2>
+               <i class="bi bi-x text-white lg:hidden text-2xl" onclick="Open()"></i>
+          </div>
+
+          <div class="flex mt-10 hover:bg-blue-600">
+               <i class="bi bi-house-add-fill text-white text-xl ml-2"></i>
+               <h2 class="text-xl text-white ml-2 px-3 py-1 ">Home</h2>
+          </div>
+
+          <div class="flex mt-4 hover:bg-blue-600">
+               <i class="bi bi-people-fill text-white text-xl ml-2"></i>
+               <h2 class="text-xl text-white ml-2 px-4 py-1 ">Customer</h2>
+          </div>
+          <div class="flex mt-4 hover:bg-blue-600">
+               <i class="bi bi-people-fill text-white text-xl ml-2"></i>
+               <h2 class="text-xl text-white ml-2 px-4 py-1 ">Purchase</h2>
+          </div>
+
+          <hr class="mt-10">
+
+          <div class="flex mt-4 hover:bg-blue-600">
+               <i class="bi bi-people-fill text-white text-xl ml-2"></i>
+               <h2 class="text-xl text-white ml-2 px-4 py-1 ">Order</h2>
+          </div>
+
+          <div class="flex mt-4 hover:bg-blue-600">
+               <i class="bi bi-people-fill text-white text-xl ml-2"></i>
+               <h2 class="text-xl text-white ml-2 px-4 py-1 ">Report</h2>
+          </div>
+
+          <div class="flex mt-4 hover:bg-blue-600">
+               <i class="bbi bi-box-arrow-right text-white text-xl ml-2"></i>
+               <h2 class="text-xl text-white ml-2 px-4 py-1 ">Logout</h2>
+          </div>
+          
+     </div>
+     <script>
+          function Open(){
+             document.querySelector(".sidebar").classList.toggle('-left-96')
+          }
+     </script>
+</body>
+</html>
